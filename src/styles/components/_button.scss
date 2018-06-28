@@ -1,0 +1,17 @@
+// Default styling for buttons
+.button {
+  background: $primary-btn-color;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  display: inline-block; // Allows top & bottom margins/paddings to be respected
+  font-size: $l-font;
+  font-weight: 300;
+  line-height: 1;
+  padding: $s-size;
+  text-decoration: none;
+}
+
+.button:hover {
+  background: darken($primary-btn-color, 2%);
+}

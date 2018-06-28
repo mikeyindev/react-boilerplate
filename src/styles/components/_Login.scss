@@ -1,0 +1,58 @@
+.google-logo {
+  margin-right: 1rem;
+}
+
+.Login {
+  align-items: center;
+  background: url('/images/bg.jpg');
+  background-size: cover; // Cover the entire box--layout
+  display: flex;
+  height: 100vh; // 100% of the viewport height
+  justify-content: center;
+  width: 100vw; // 100% of the viewport width
+}
+
+.Login__box {
+  background: fade-out(white, .30); // Add 30% transparency to the box.
+  border-radius: 5px; // Round corners
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: $l-size;
+  text-align: center;
+  width: 30rem;
+}
+
+.Login__box__title {
+  font-size: 4rem;
+  margin: 0;
+  // line-height is the height of each line, think of it as spacing between
+  // lines. "normal" in browser is 110-120% or 1.1-1.2.
+  line-height: 1;
+}
+
+.Login__box__subtitle {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.Login__button {
+  align-items: center;
+  background-color:$login-btn-color;
+  // background-color: white;
+  border-bottom: .3rem solid darken($login-btn-color, 10%);
+  border-color: transparent;
+  // border-color: rgb(118, 118, 118);
+  border-width: 2px;
+  // color: rgb(118, 118, 118);
+  color: white;
+  font-size: $l-font;
+  font-weight: 400;
+  display: flex;
+  padding: $m-size $l-size;
+  text-align: center;
+}
+
+.Login__button:hover {
+  background: darken($login-btn-color, 2%);
+}

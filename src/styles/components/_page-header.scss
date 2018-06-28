@@ -1,0 +1,25 @@
+// "Create Expense", "Edit Expense", etc.
+.page-header {
+  margin-bottom: $m-size;
+  padding: $m-size 0;
+}
+
+.page-header__action {
+  // font-size: $m-size;
+  margin-top: $s-size;
+  // text-decoration: underline;
+}
+
+.page-header__title {
+  font-weight: 300;
+  text-align: center;
+  span {
+    font-weight: bold; // Numerical value is 700
+  }
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .page-header__title {
+    text-align: left;
+  }
+}
